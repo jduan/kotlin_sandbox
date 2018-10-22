@@ -2,6 +2,7 @@ import geometry.colors.Color
 import geometry.shapes.createRandomRectangle
 import geometry.colors.*
 import other.expr.*;
+import other.loop.*;
 
 data class Person(val name: String,
                   // null by default
@@ -24,6 +25,10 @@ fun main(args: Array<String>) {
     println(mix(Color.BLUE, Color.YELLOW))
     println(eval(Sum(Num(1), Num(2))))
     println(eval2(Sum(Num(1), Num(2))))
+    testLoops()
+    iterateMap()
+    iterateList()
+    println(recognize('$'))
 }
 
 fun max(a: Int, b: Int): Int {
