@@ -1,4 +1,7 @@
+import geometry.colors.Color
 import geometry.shapes.createRandomRectangle
+import geometry.colors.*
+import other.expr.*;
 
 data class Person(val name: String,
                   // null by default
@@ -16,6 +19,11 @@ fun main(args: Array<String>) {
     val rect = Rectangle(3, 4)
     println(rect.isSquared)
     println(createRandomRectangle().isSquare)
+    println(getMnemonic(Color.BLUE))
+    println(getMnemonic(Color.BLUE))
+    println(mix(Color.BLUE, Color.YELLOW))
+    println(eval(Sum(Num(1), Num(2))))
+    println(eval2(Sum(Num(1), Num(2))))
 }
 
 fun max(a: Int, b: Int): Int {
