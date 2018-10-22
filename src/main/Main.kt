@@ -1,8 +1,11 @@
 import geometry.colors.Color
 import geometry.shapes.createRandomRectangle
 import geometry.colors.*
+import other.exceptions.readNumber
 import other.expr.*;
 import other.loop.*;
+import java.io.BufferedReader
+import java.io.StringReader
 
 data class Person(val name: String,
                   // null by default
@@ -29,6 +32,7 @@ fun main(args: Array<String>) {
     iterateMap()
     iterateList()
     println(recognize('$'))
+    readNumber(BufferedReader(StringReader("not a number")))
 }
 
 fun max(a: Int, b: Int): Int {
