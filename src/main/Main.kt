@@ -4,6 +4,8 @@ import geometry.colors.*
 import other.exceptions.readNumber
 import other.expr.*;
 import other.loop.*;
+import other.collections.*;
+import other.extensions.lastChar as last;
 import java.io.BufferedReader
 import java.io.StringReader
 
@@ -33,6 +35,23 @@ fun main(args: Array<String>) {
     iterateList()
     println(recognize('$'))
     readNumber(BufferedReader(StringReader("not a number")))
+
+    // collections
+    val set = hashSetOf(1, 7, 53)
+    val list = arrayListOf(1, 7, 53)
+    val map = hashMapOf(1 to "one", 7 to "seven", 53 to "fifty-three")
+    println("is 1 in the set? ${1 in set}")
+    println("last element of list: ${list.last()}")
+    println("max element of set: ${set.max()}")
+
+    println(list.joinToString())
+
+    println("Kotlin".last())
+
+    // extension properties
+    val sb = StringBuilder("Kotlin?")
+    sb.lastChar = '!'
+    println(sb)
 }
 
 fun max(a: Int, b: Int): Int {
