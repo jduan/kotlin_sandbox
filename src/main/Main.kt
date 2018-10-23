@@ -5,6 +5,7 @@ import other.exceptions.readNumber
 import other.expr.*;
 import other.loop.*;
 import other.collections.*;
+import other.interfaces.*;
 import other.extensions.lastChar as last;
 import java.io.BufferedReader
 import java.io.StringReader
@@ -52,6 +53,8 @@ fun main(args: Array<String>) {
     val sb = StringBuilder("Kotlin?")
     sb.lastChar = '!'
     println(sb)
+
+    Button().showOff()
 }
 
 fun max(a: Int, b: Int): Int {
