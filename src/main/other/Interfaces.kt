@@ -61,3 +61,16 @@ internal open class TalkativeButton : Focusable {
 //    yell()
 //    whisper()
 //}
+
+open class User(val nickname: String,
+           val isSubscribed: Boolean = true)
+
+class TwitterUser(nickname: String) : User(nickname) {
+    // secondary constructor
+    constructor(firstname: String, lastname: String) : this(firstname + lastname) {
+
+    }
+}
+
+// This means Secretive can't be instantiated!
+class Secretive private constructor() {}

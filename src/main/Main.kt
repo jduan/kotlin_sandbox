@@ -55,6 +55,8 @@ fun main(args: Array<String>) {
     println(sb)
 
     Button().showOff()
+
+    println(TwitterUser("Jingjing", "Duan").nickname)
 }
 
 fun max(a: Int, b: Int): Int {
