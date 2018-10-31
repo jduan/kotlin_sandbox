@@ -1,6 +1,7 @@
 import geometry.colors.Color
 import geometry.shapes.createRandomRectangle
 import geometry.colors.*
+import main.other.lambdas.findOldestPerson
 import other.exceptions.readNumber
 import other.expr.*;
 import other.loop.*;
@@ -62,6 +63,8 @@ fun main(args: Array<String>) {
     Payroll.addEmployee(other.objects.Person("John", 30.0))
     Payroll.addEmployee(other.objects.Person("Mike", 40.0))
     println(Payroll.calculateSalary())
+
+    println(findOldestPerson())
 }
 
 fun max(a: Int, b: Int): Int {
