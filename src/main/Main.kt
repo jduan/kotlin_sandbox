@@ -6,6 +6,7 @@ import other.expr.*;
 import other.loop.*;
 import other.collections.*;
 import other.interfaces.*;
+import other.objects.Payroll
 import other.extensions.lastChar as last;
 import java.io.BufferedReader
 import java.io.StringReader
@@ -57,6 +58,10 @@ fun main(args: Array<String>) {
     Button().showOff()
 
     println(TwitterUser("Jingjing", "Duan").nickname)
+
+    Payroll.addEmployee(other.objects.Person("John", 30.0))
+    Payroll.addEmployee(other.objects.Person("Mike", 40.0))
+    println(Payroll.calculateSalary())
 }
 
 fun max(a: Int, b: Int): Int {
