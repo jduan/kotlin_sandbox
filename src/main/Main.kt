@@ -1,7 +1,7 @@
 import geometry.colors.Color
 import geometry.shapes.createRandomRectangle
 import geometry.colors.*
-import main.other.lambdas.findOldestPerson
+import main.other.lambdas.*
 import other.exceptions.readNumber
 import other.expr.*;
 import other.loop.*;
@@ -42,7 +42,7 @@ fun main(args: Array<String>) {
     // collections
     val set = hashSetOf(1, 7, 53)
     val list = arrayListOf(1, 7, 53)
-    val map = hashMapOf(1 to "one", 7 to "seven", 53 to "fifty-three")
+//    val map = hashMapOf(1 to "one", 7 to "seven", 53 to "fifty-three")
     println("is 1 in the set? ${1 in set}")
     println("last element of list: ${list.last()}")
     println("max element of set: ${set.max()}")
@@ -65,6 +65,15 @@ fun main(args: Array<String>) {
     println(Payroll.calculateSalary())
 
     println(findOldestPerson())
+    println(lambdaExamples())
+    val errors = listOf("403 Forbidden", "404 Not Found")
+    printMessages(errors, "Error:")
+    val responses = listOf("200 OK", "418 I'm a teapot", "500 Internal Server Error")
+    printProblemCounts(responses)
+    collectionExamples()
+    sequenceExamples()
+    println(lambdaWithReceivers())
+    println(lambdaWithReceivers2())
 }
 
 fun max(a: Int, b: Int): Int {
