@@ -2,6 +2,7 @@ import geometry.colors.Color
 import geometry.shapes.createRandomRectangle
 import geometry.colors.*
 import main.other.lambdas.*
+import main.other.types.*
 import other.exceptions.readNumber
 import other.expr.*;
 import other.loop.*;
@@ -74,6 +75,14 @@ fun main(args: Array<String>) {
     sequenceExamples()
     println(lambdaWithReceivers())
     println(lambdaWithReceivers2())
+
+    runTypes()
+    printAllCaps("abc")
+    printAllCaps(null)
+    testSafeCall()
+    letExample()
+    verifyUserInput(null)
+    verifyUserInput("  ")
 }
 
 fun max(a: Int, b: Int): Int {
