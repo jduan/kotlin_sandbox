@@ -1,6 +1,7 @@
 import geometry.colors.Color
 import geometry.shapes.createRandomRectangle
 import geometry.colors.*
+import main.other.conventions.runConventions
 import main.other.lambdas.*
 import main.other.types.*
 import other.exceptions.readNumber
@@ -83,6 +84,8 @@ fun main(args: Array<String>) {
     letExample()
     verifyUserInput(null)
     verifyUserInput("  ")
+
+    runConventions()
 }
 
 fun max(a: Int, b: Int): Int {
