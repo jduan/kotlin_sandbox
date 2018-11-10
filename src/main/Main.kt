@@ -2,6 +2,7 @@ import geometry.colors.Color
 import geometry.shapes.createRandomRectangle
 import geometry.colors.*
 import main.other.conventions.runConventions
+import main.other.generics.runGenerics
 import main.other.hof.runHOF
 import main.other.lambdas.*
 import main.other.types.*
@@ -89,6 +90,8 @@ fun main(args: Array<String>) {
     runConventions()
 
     runHOF()
+
+    runGenerics()
 }
 
 fun max(a: Int, b: Int): Int {
