@@ -1,4 +1,4 @@
-package other.objects
+package jduan.objects
 
 data class Person(val name: String, val hourlyRate: Double)
 

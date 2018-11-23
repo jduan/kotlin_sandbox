@@ -1,4 +1,4 @@
-package main.other.generics
+package jduan.generics
 
 import java.lang.IllegalArgumentException
 

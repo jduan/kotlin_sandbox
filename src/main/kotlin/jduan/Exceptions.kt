@@ -1,4 +1,4 @@
-package other.exceptions
+package jduan.exceptions
 
 import java.io.BufferedReader
 import java.lang.NumberFormatException

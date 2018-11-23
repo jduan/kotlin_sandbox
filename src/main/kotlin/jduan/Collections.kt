@@ -1,4 +1,4 @@
-package other.collections
+package jduan.collections
 
 fun <T> Collection<T>.joinToString(
         separator: String = ", ",

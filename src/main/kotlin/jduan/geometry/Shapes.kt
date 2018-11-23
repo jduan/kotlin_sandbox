@@ -1,4 +1,4 @@
-package geometry.shapes
+package jduan.geometry.shapes
 
 import java.util.Random
 

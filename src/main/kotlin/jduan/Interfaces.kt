@@ -1,4 +1,4 @@
-package other.interfaces
+package jduan.interfaces
 
 interface Clickable {
     fun click()

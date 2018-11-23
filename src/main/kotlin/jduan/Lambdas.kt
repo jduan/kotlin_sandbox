@@ -1,4 +1,4 @@
-package main.other.lambdas
+package jduan.lambdas
 
 import java.io.File
 

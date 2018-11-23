@@ -20,7 +20,7 @@ apply plugin: 'application'
 // So if the filename that contains the "main" func is called HelloWorld.kt,
 // the class will be named "HelloWorldKt".
 // See https://discuss.kotlinlang.org/t/no-class-just-fun-main/5147
-mainClassName = 'jduan.HelloWorldKt'
+mainClassName = 'jduan.main.MainKt'
 
 defaultTasks 'run'
 
@@ -35,7 +35,7 @@ dependencies {
 }
 
 jar {
-    manifest { attributes 'Main-Class': 'jduan.HelloWorldKt' }
+    manifest { attributes 'Main-Class': 'jduan.main.MainKt' }
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
 }
 

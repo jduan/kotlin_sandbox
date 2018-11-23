@@ -1,4 +1,4 @@
-package main.other.conventions
+package jduan.conventions
 
 import java.lang.IndexOutOfBoundsException
 

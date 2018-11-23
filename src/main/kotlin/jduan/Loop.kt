@@ -1,4 +1,4 @@
-package other.loop
+package jduan.loop
 
 import java.util.*
 
