@@ -8,6 +8,11 @@ buildscript {
     }
 }
 
+plugins {
+    // run "./gradlew dokka" to generate HTML docs
+    id "org.jetbrains.dokka" version "0.9.17"
+}
+
 apply plugin: 'kotlin'
 apply plugin: 'application'
 
