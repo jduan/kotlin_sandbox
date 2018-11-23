@@ -14,6 +14,7 @@ apply plugin: 'application'
 // Note that the Kotlin compiler will create a class based on the "main" function.
 // So if the filename that contains the "main" func is called HelloWorld.kt,
 // the class will be named "HelloWorldKt".
+// See https://discuss.kotlinlang.org/t/no-class-just-fun-main/5147
 mainClassName = 'jduan.HelloWorldKt'
 
 defaultTasks 'run'
