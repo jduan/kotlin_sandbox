@@ -17,8 +17,6 @@ import jduan.objects.Payroll
 import jduan.extensions.lastChar as last;
 import java.io.BufferedReader
 import java.io.StringReader
-import java.util.*
-
 
 fun main(args: Array<String>) {
   val persons = listOf(Person("Alice", 30),
