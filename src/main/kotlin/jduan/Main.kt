@@ -14,9 +14,11 @@ import jduan.collections.*;
 import jduan.geometry.shapes.Rectangle
 import jduan.interfaces.*;
 import jduan.objects.Payroll
+import org.ocpsoft.prettytime.PrettyTime
 import jduan.extensions.lastChar as last;
 import java.io.BufferedReader
 import java.io.StringReader
+import java.util.*
 
 fun main(args: Array<String>) {
   val persons = listOf(Person("Alice", 30),
@@ -90,5 +92,7 @@ fun main(args: Array<String>) {
   runHOF()
 
   runGenerics()
+
+  println(PrettyTime(Locale("en/US")).format(Date(-1)))
 }
 
